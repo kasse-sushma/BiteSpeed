@@ -5,8 +5,8 @@ This project solves the Bitespeed backend engineering task — building a system
 ---
 
 ## 🚀 Live API
-- API          - [https://bitespeed-identity-4f1w.onrender.com](https://bitespeed-identity-4f1w.onrender.com/)
-- API endpoint - [https://bitespeed-identity-4f1w.onrender.com/identify](https://bitespeed-identity-4f1w.onrender.com/identify)
+- API          - [https://bitespeed-7j7e.onrender.com](https://bitespeed-7j7e.onrender.com)
+- API endpoint - [https://bitespeed-7j7e.onrender.com/identify](https://bitespeed-7j7e.onrender.com/identify)
 
 ---
 
