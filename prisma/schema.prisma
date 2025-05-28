@@ -1,0 +1,30 @@
+
+generator client {
+  provider = "prisma-client-js"
+  
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Contact {
+  id             Int       @id @default(autoincrement())
+  phoneNumber    String?
+  email          String?
+  linkedId       Int?
+  linkPrecedence String    @default("primary")
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  deletedAt      DateTime?
+
+  linkedContact  Contact?  @relation("Link", fields: [linkedId], references: [id])
+  secondaryLinks Contact[] @relation("Link")
+}
+
+/// For this small use case, a single Contact table works well and keeps things simple.
+/// But for a larger system, we could scale this into two tables:
+/// one for primary identities (UserIdentity) and another for contact methods (Contact),
+/// linked by a foreign key. This separation improves clarity, normalization,
+/// and makes future features (like account merging or audit logs) easier to manage.

@@ -1,0 +1,28 @@
+{
+  "name": "bitespeed-identity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "start": "node src/server.js",
+  "postinstall": "npx prisma generate"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ganji-Sandeep-10/bitespeed-identity.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ganji-Sandeep-10/bitespeed-identity/issues"
+  },
+  "homepage": "https://github.com/Ganji-Sandeep-10/bitespeed-identity#readme",
+  "dependencies": {
+    "@prisma/client": "^6.8.2",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "prisma": "^6.8.2"
+  }
+}
